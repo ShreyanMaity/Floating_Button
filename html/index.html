@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error form</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="overlay" onclick="$S.cancelModalClick()" style="opacity: 1">
+        <div class="report_form">
+            <!-- <div>
+                <h4>Report an error</h4>
+            </div> -->
+            <div class="modal_dialog modal_dialog_feedback" style="max-height: 683px">
+                <div>
+                    <h4>Report an error</h4>
+                </div>
+                <div class="modal_dialog_inner test">
+                    <div>
+                        <span>Name</span>
+                        <br/>
+                        <input type="text" id="user_name_feedback" autocomplete="off" placeholder="Enter Name" />
+                    </div>
+                    <br/>
+                    <div>
+                        <span>Email</span>
+                        <br/>
+                        <input type="email" id="user_email_feedback" autocomplete="off" placeholder="Email id"/>
+                    </div>
+                    <br/>
+                    <div style="display: none">
+                        <span>Select</span>
+                        <br/>
+                        <select id="type">
+                            <option value="page">page</option>
+                        </select>
+                    </div>
+                    <br style="display: none"/>
+                    <div>
+                        <span>Message</span>
+                        <br/>
+                        <textarea id="user_feedback" autocomplete="off" placeholder="Write your feedback" style="width: 275px;height:100px;"></textarea>
+                    </div>
+                    <br/>
+                    <div id="captcha">
+                        <div style="width: 304px; height: 78px">
+                            <div>
+                                <iframe title="reCAPTCHA"
+                                    src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LelaAgTAAAAAGuKGeAuasjzRuxiGJ01owOsLFYp&amp;co=aHR0cHM6Ly93d3cuc2hhYWxhYS5jb206NDQz&amp;hl=en&amp;v=ecapuzyywmdXQ5gJHS3JQiXe&amp;size=normal&amp;cb=5fc5eqs97y1p"
+                                    width="304" height="78" role="presentation" name="a-pb95xkyo2tb4" frameborder="0"
+                                    scrolling="no"
+                                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                            </div>
+                            <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
+                                style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;">
+                            </textarea>
+                        </div>
+                        <iframe style="display: none"></iframe>
+                    </div>
+                </div>
+                <div class="modal_actions clearfix" style="align-items: center;">
+                    <button class="flat click_effect"  onclick="$S.feedbackSubmitClick()">
+                        REPORT ERROR
+                    </button>
+                    <button class="flat modal_dialog_close click_effect" onclick="$S.cancelModalClick()">
+                        CANCEL
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

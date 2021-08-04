@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: "Roboto", Sans-serif;
+}
+.report{
+    z-index: 9999999999999;
+    position: fixed;
+    right: 0%;
+    top: 85%;
+    /* bottom: 0%; */
+    height: 100vh;
+    display:flex;
+    float: right;
+    flex-direction: column;
+    justify-content: right;
+    font-size:30px;
+    transform: translate(280px, 0);
+}
+.report a{
+    color: red;
+    background: rgba(0,0,0,0.4);
+    text-decoration: none;
+    display: block;
+    margin: 5px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    border-radius:50px;
+    transition: .6s;
+    transition-property: transform;
+}
+.report a:hover{
+    transform: translate(-190px,0);
+}
+span{
+    margin-left:10px;
+    color: black;
+}

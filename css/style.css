@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 1.2em;
+    background-color: aliceblue;
+}
+.report_form{
+    /* background-color: antiquewhite;
+    height: 683px;
+    width: 120px;
+    justify-content: center; */
+    padding: 10px;
+    max-height: 683px;
+    background-color: rgb(253, 252, 252);
+    box-shadow: 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%), 0 5px 5px -3px rgb(0 0 0 / 30%);
+    left: 50%;
+    margin-left: -150px;
+    position: fixed;
+    top: 112px;
+    width: 300px;
+    z-index: 1002;
+    box-sizing: border-box;
+    overflow: auto;
+    min-width: 300px;
+    will-change: transform;
+    border-radius: 7px;
+
+
+}
+
+
+button{
+    padding: 5px;
+    align-items: center;
+    color:rgb(227, 192, 233);
+    background-color: rgb(226, 224, 224);
+    outline:none;
+    border:0.5px solid rgb(92, 92, 92);
+    border-radius: 1.5px;
+}
+
+button:hover{
+    color:rgb(195, 56, 219);
+    background-color: rgb(181, 245, 128);
+    border-radius: 5px;
+}
+input{
+    border: none !important;
+    width: 100%;
+    outline: none !important;
+    height:20px;
+    border-bottom: 2px solid rgb(221, 220, 220) !important;
+}
